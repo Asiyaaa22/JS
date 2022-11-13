@@ -1,0 +1,18 @@
+body{
+    background-image: linear-gradient(rgb(168, 168, 215),lightblue,rgb(168, 168, 215));
+
+}
+h1{
+    color:navy;
+}
+pre{
+    font-size:x-large;
+    color: brown;
+}
+p, li{
+    font-size: large;
+}
+sub{
+    color: maroon;
+    font-size: xx-large;
+}

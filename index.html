@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT-1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./image.png" type="image/x-icon/png">
+</head>
+<body>
+    <center><H1>INTRODUCTION TO JAVASCRIPT</H1><hr/>
+    <h1>JAVASCRIPT CODING QUESTIONS</h1></center>
+     <sub>Add two numbers</sub>   
+    <p>You are provided with two numbers A and B. Your task is to add these two numbers.</p>
+
+    <center><pre>const AddTwoNumbers = (a,b) => {
+        return a+b;
+    };</pre></center>
+
+    <sub>Find if the conditions are obeyed or not?</sub>
+    <p>Find if the conditions are obeyed or not?
+        You are given two number first as A and second as B and check if both conditions (A<10 and A>B) are satisfied or not with the help of operators.</p>
+       <center><pre>const Is_Valid = (a,b) => {
+            return a<10 && a>b;
+          };</pre></center>
+
+    <sub>Check the conditions</sub>
+    <p>You are given two numbers A and B. You need to do the following checks:
+       <ol> 
+        <li>if both are divisible by 10 console true.</li>
+        <li>if both are not divisible by 10 console false.</li>
+        <li>if one of them only is divisible by 10 console true.</li>
+        <li>Use operator to do this.</li></ol></p>
+        <center><pre>const Check = (A, B) =>
+            {
+              if(A%10===0 && B%10===0){
+                return "true";
+              }
+              else if(A%10===0 || B%10===0){
+                return "true";
+              }
+              else{
+                return "false"
+              }
+            };
+            </pre></center>
+
+        <sub>Find the first digit of a 4 digit number</sub>
+    <p>You are provided a four digit number N only. Your task is to print out the first digit of that number.</p>   
+        <center><pre>const First_Digit = (n) => {
+            var a=n/1000;
+            var b=parseInt(a);
+            return b;
+         };</pre></center>    
+
+
+         <sub>Find the last digit of a 4 digit number</sub>
+        <p>You are provided a four digit number N only. Your task is to print out the last digit of that number.</p> 
+            <center><pre>const Last_Digit = (n) => {
+            var x = n%10;
+            var y = parseInt (x);
+            return y;
+         };
+         </pre></center>
+
+        <sub>Find the remainder</sub>
+        <p>You are provided with two numbers A and B where A as  divisor and B as  dividend.Your task is find the remainder.</p>
+           <center><pre>const Find_the_remainder = (a,b) => {
+            var rmdr = b%a;
+            return  rmdr;
+        };</pre></center>
+
+        <sub>Multipy two Numbers</sub>
+        <p>You are provided with two numbers A and B. Your task is to multiply these two numbers.</p>
+            <center><pre>const Multiply_two_number = (a,b) => {
+                var c = a*b;
+                return c;
+              };</pre></center>
+
+        <sub>Marks calculator</sub>
+        <p>Shyam has got his marks in three subjects as A ,B, and C (out of 100).Write a program to calculate his total marks and his average</p>
+            <center><pre>
+                    const Sum = (A, B, C) => 
+                    {
+                      var marks = A+B+C;
+                     return marks;
+                    };
+                    
+                    const Average = (A, B, C) => 
+                    {
+                      var avg = (A+B+C)/3;
+                     return avg;
+                    };
+                </pre></center>
+</body>
+</html>
