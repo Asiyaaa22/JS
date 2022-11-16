@@ -93,5 +93,96 @@
                      return avg;
                     };
                 </pre></center>
+
+    <h1>DECISION MAKING</h1></center>
+<sub>ELIGIBLE VOTER</sub>
+   <p> You are given an integer A, denoting the age of a person, and your task is to determine whether he/she is eligible to vote or not.</p>
+ <center>
+<pre>
+  const isEligible = (a) => {
+    if (a>18){
+      return "Eligible for Voting";
+    }
+    else{
+      return "Not Eligible for Voting";
+    }
+};
+</pre>
+</center>
+
+<Sub>FIND RELATION</Sub>
+<p>PrepBuddy wants you to get familiar with various Relational operators. He provides you with two integer values X and Yand asks you to find the relation between them.The relationships between integers X and Y are as follows:If X < Y, it means that Xis smaller than Y.If X >Y, it means that X is greater than Y.If X=Y, it means that X is equal to Y. </p>
+<center>
+  <pre>
+    
+const findRelation = (x,y) => {
+  if (x<y){
+    return (x + " is smaller than " + y);
+  }
+  else if(x>y){
+    return (x + " is greater than " + y);
+  }
+  else(x==y);{
+    return (x + " is equal to " + y);
+  }
+};
+  </pre>
+</center>
+<sub>Find the maximum out of three numbers.</sub>
+<p>Take three numbers and print the largest number among them if all of three are same print − 1.</p>
+<center><pre>
+
+  const Max_out_of_three = (A,B,C) => {
+    if ( A > B && A > C ){
+      return ( A );
+    }
+    else if ( B > A && B > C ){
+      return ( B );
+    }
+    else if ( C > A && C > A){
+      return ( C );
+    }
+    else{
+      return (-1);
+    
+    }
+
+};
+
+</pre></center>
+<sub>Check whether the triangle is Acute or Obtuse</sub>
+<p>Write a program takes takes three angles and checks whether the triangle is acute or obtuse.</p>
+<center><pre>
+  
+const Triangle_Check = (A,B,C) => {
+  if(A < 90 && B < 90 && C < 90)
+   return "acute";
+  else (A > 90 || B > 90 || C > 90)
+   return "obtuse";
+};
+</pre></center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
